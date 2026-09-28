@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Save Our Forests</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="#facts">Facts</a>
+    <a href="#tips">Tips</a>
+    <a href="#awareness">Awareness</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#counter">Plant a Tree</a>
+    <a href="#feedback">Feedback</a>
+  </nav>
+
+<header>
+  <h1>🌲 Save Our Forests</h1>
+  <p>Learn why forests matter and how you can help protect them.</p>
+</header>
+
+<section id="facts">
+  <h2>Did You Know?</h2>
+  <div class="card-container">
+    <div class="card">
+      <span class="number">31%</span>
+      <p>of the world's land is covered by forests</p>
+    </div>
+    <div class="card">
+      <span class="number">80%</span>
+      <p>of land animals and plants live in forests</p>
+    </div>
+    <div class="card">
+      <span class="number">1.6B</span>
+      <p>people depend on forests for their livelihood</p>
+    </div>
+    <div class="card">
+      <span class="number">10M</span>
+      <p>hectares of forest are lost every year</p>
+    </div>
+  </div>
+</section>
+
+<section id="tips">
+  <h2>How You Can Help</h2>
+  <ul>
+    <li>Plant a tree in your community or backyard</li>
+    <li>Use recycled paper products</li>
+    <li>Choose products with sustainable wood</li>
+    <li>Reduce paper waste</li>
+    <li>Tell your friends and family about forests</li>
+    <li>Support tree-planting organizations</li>
+  </ul>
+</section>
+
+<section id="awareness">
+  <h2>Why Forest Awareness Matters</h2>
+  <p>Forests are called the "lungs of the Earth" because they make oxygen and absorb carbon dioxide. Every year, millions of hectares of forest are cut down.</p>
+
+  <img src="https://images.unsplash.com/photo-1728130253413-05bca28ac75d?fm=jpg&q=60&w=960&auto=format&fit=crop" alt="A pile of freshly cut down trees in a forest" class="awareness-img">
+
+  <p>Deforestation does more than remove trees. It disrupts entire ecosystems, changes local rainfall patterns, and leaves soil exposed to erosion. This can lead to landslides and make land less fertile for farming nearby.</p>
+
+  <p>Trees also help fight climate change by storing carbon in their trunks, roots, and the soil around them. When forests are cut down or burned, that stored carbon is released back into the air, adding to global warming.</p>
+
+  <img src="https://images.unsplash.com/photo-1760645612099-569f42cacd74?fm=jpg&q=60&w=960&auto=format&fit=crop" alt="Sunlight filtering through a lush, healthy forest canopy" class="awareness-img">
+
+  <p>Forests are also home to millions of people who rely on them for food, medicine, and a way of life. Protecting forests means protecting these communities as much as the trees themselves.</p>
+
+  <p>When people learn about forests, they make better choices that help protect them. Every small action adds up!</p>
+</section>
+
+<section id="gallery">
+  <h2>Forest Gallery</h2>
+  <div class="gallery-container">
+    <img src="https://picsum.photos/id/1043/250/180" alt="Forest path">
+    <img src="https://picsum.photos/id/1044/250/180" alt="Tall trees">
+    <img src="https://picsum.photos/id/1040/250/180" alt="Green woods">
+    <img src="https://picsum.photos/id/1039/250/180" alt="River valley">
+  </div>
+</section>
+
+<section id="counter">
+  <h2>Virtual Tree Planting</h2>
+  <p>Click the button to plant a virtual tree.</p>
+  <p>Trees planted: <span id="treeCount">0</span></p>
+  <button onclick="plantTree()">Plant a Tree</button>
+  <button onclick="resetTrees()" class="secondary">Reset</button>
+  <p id="forestDisplay"></p>
+</section>
+
+<section id="feedback">
+  <h2>Feedback</h2>
+  <form id="feedbackForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" placeholder="Letters only" pattern="[A-Za-z ]{2,30}" title="Name should be 2-30 letters, no numbers or symbols" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" placeholder="you@example.com" required><br><br>
+
+    <label for="type">Feedback Type:</label><br>
+    <select id="type">
+      <option value="">-- Choose one --</option>
+      <option value="suggestion">Suggestion</option>
+      <option value="compliment">Compliment</option>
+      <option value="issue">Report an Issue</option>
+    </select><br><br>
+
+    <label for="message">Your Feedback:</label><br>
+    <textarea id="message" rows="4" minlength="10" maxlength="300" placeholder="Please write at least 10 characters" required></textarea>
+    <br>
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+</section>
+
+<div id="popupOverlay">
+  <div id="thankYouPopup">
+    <p>Thank you for your feedback!</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+<footer>
+  <p>Made to raise awareness about forest conservation.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
